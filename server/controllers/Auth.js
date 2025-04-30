@@ -228,7 +228,6 @@ exports.sendotp = async (req, res) => {
     });
 
   } catch (error) {
-    console.error('Error in sendotp:', error);
     return res.status(500).json({
       success: false,
       message: 'Failed to send OTP',
